@@ -22,15 +22,7 @@
         <div class="container header-inner">
           <!-- Brand -->
           <a href="#home" class="brand" aria-label="TechBridge home">
-            <span class="brand-mark" aria-hidden="true">
-              <span>T</span>
-              <span>B</span>
-            </span>
-
-            <span class="brand-copy">
-              <strong>TechBridge</strong>
-              <small>by Baselink Services Limited</small>
-            </span>
+            <img src="/techbridge-logo.png" class="brand-image" />
           </a>
 
           <!-- Desktop Navigation -->
@@ -126,10 +118,7 @@
       </header>
 
       <main>
-        <!-- =================================================
-                 HERO
-            ================================================== -->
-
+        <!-- HERO -->
         <section class="hero" id="home">
           <div class="container hero-grid">
             <div class="hero-content">
@@ -139,11 +128,11 @@
               </div>
 
               <h1>
-              Turn what you
-              <span>learn</span>
-              into what you
-              <em>can do.</em>
-            </h1>
+                Turn what you
+                <span>learn</span>
+                into what you
+                <em>can do.</em>
+              </h1>
 
               <p class="hero-description">
                 TechBridge by Baselink Services Limited helps learners move
@@ -266,10 +255,7 @@
           </div>
         </section>
 
-        <!-- =================================================
-                 ABOUT
-            ================================================== -->
-
+        <!-- ABOUT -->
         <section class="section about-section" id="about">
           <div class="container">
             <div class="section-heading">
@@ -335,10 +321,7 @@
           </div>
         </section>
 
-        <!-- =================================================
-                 PROGRAMS
-            ================================================== -->
-
+        <!-- PROGRAMS -->
         <section class="section programs-section" id="programs">
           <div class="container">
             <div class="section-heading section-heading-row">
@@ -400,10 +383,7 @@
           </div>
         </section>
 
-        <!-- =================================================
-                 INTERNSHIP
-            ================================================== -->
-
+        <!-- INTERNSHIP -->
         <section class="section internship-section" id="internship">
           <div class="container">
             <div class="internship-grid">
@@ -500,10 +480,7 @@
           </div>
         </section>
 
-        <!-- =================================================
-                 HOW IT WORKS
-            ================================================== -->
-
+        <!-- HOW IT WORKS -->
         <section class="section process-section" id="how-it-works">
           <div class="container">
             <div class="section-heading centered">
@@ -556,10 +533,7 @@
           </div>
         </section>
 
-        <!-- =================================================
-                 READY TO BEGIN
-            ================================================== -->
-
+        <!-- READY TO BEGIN -->
         <section class="ready-section" id="apply">
           <div class="container">
             <div class="ready-card">
@@ -606,13 +580,9 @@
           <div class="footer-main">
             <div class="footer-brand">
               <a href="#home" class="brand" aria-label="TechBridge home">
-                <span class="brand-mark" aria-hidden="true">
-                  <span>T</span>
-                  <span>B</span>
-                </span>
+                <img src="/techbridge-logo.png" class="brand-image" />
 
                 <span class="brand-copy">
-                  <strong>TechBridge</strong>
                   <small> by Baselink Services Limited </small>
                 </span>
               </a>
@@ -671,10 +641,7 @@
 
     <!-- JAVASCRIPT -->
     <script>
-      /* =====================================================
-           MOBILE MENU
-        ====================================================== */
-
+      //  MOBILE MENU
       const menuButton = document.getElementById("menu-button");
       const mobileNavigation = document.getElementById("mobile-navigation");
 
@@ -771,10 +738,7 @@
         }
       });
 
-      /* =====================================================
-           LIGHT / DARK MODE
-        ====================================================== */
-
+      //  LIGHT / DARK MODE
       const themeButtons = [
         document.getElementById("theme-toggle"),
         document.getElementById("mobile-theme-toggle"),
@@ -827,11 +791,6 @@
           setTheme(currentTheme === "dark" ? "light" : "dark");
         });
       });
-
-      /* =====================================================
-           PREVENT HASH NAVIGATION FROM CREATING UNWANTED
-           MOBILE MENU STATE
-        ====================================================== */
 
       window.addEventListener("hashchange", () => {
         if (mobileNavigation.classList.contains("is-open")) {
