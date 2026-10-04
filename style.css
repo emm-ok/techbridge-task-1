@@ -98,6 +98,10 @@ body.menu-open {
   overflow-x: hidden;
 }
 
+main {
+  padding-top: var(--header-height);
+}
+
 img,
 svg {
   max-width: 100%;
@@ -138,7 +142,7 @@ button {
 
 /* HEADER */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
