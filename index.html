@@ -1,860 +1,843 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta
-    name="description"
-    content="TechBridge by Baselink Services Limited — Bridging Learning to Real-World Experience through practical technology programs and internships."
-  />
+    <meta
+      name="description"
+      content="TechBridge by Baselink Services Limited — Bridging Learning to Real-World Experience through practical technology learning and a 30-Day Practical Internship."
+    />
 
-  <title>TechBridge — Bridging Learning to Real-World Experience</title>
+    <title>TechBridge | Bridging Learning to Real-World Experience</title>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- SITE SHELL -->
+    <div class="site-shell">
+      <!-- HEADER -->
+      <header class="site-header">
+        <div class="container header-inner">
+          <!-- Brand -->
+          <a href="#home" class="brand" aria-label="TechBridge home">
+            <span class="brand-mark" aria-hidden="true">
+              <span>T</span>
+              <span>B</span>
+            </span>
 
-  <!-- Theme + mobile navigation controls -->
-  <input
-    type="checkbox"
-    id="theme-toggle"
-    class="theme-toggle"
-    aria-label="Toggle dark mode"
-  />
-
-  <input
-    type="checkbox"
-    id="menu-toggle"
-    class="menu-toggle"
-    aria-label="Toggle navigation menu"
-  />
-
-  <div class="site-shell">
-
-    <!-- =========================
-         HEADER
-    ========================== -->
-    <header class="site-header">
-      <div class="container nav-container">
-
-        <a href="#home" class="brand">
-          <span class="brand-mark">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-
-          <span class="brand-text">
-            <strong>TechBridge</strong>
-            <small>by Baselink Services Limited</small>
-          </span>
-        </a>
-
-        <label
-          for="menu-toggle"
-          class="menu-button"
-          aria-label="Open navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-
-        <nav class="main-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#programs">Programs</a>
-          <a href="#internship">Internship</a>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#community">Community</a>
-
-          <a
-            href="https://forms.gle/8EbdSy5ttGfLZfjv5"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="nav-cta"
-          >
-            Apply Now
+            <span class="brand-copy">
+              <strong>TechBridge</strong>
+              <small>by Baselink Services Limited</small>
+            </span>
           </a>
 
-          <label
-            for="theme-toggle"
-            class="theme-switch"
-            aria-label="Toggle light and dark mode"
+          <!-- Desktop Navigation -->
+          <nav
+            class="main-nav"
+            id="main-navigation"
+            aria-label="Main navigation"
           >
-            <span class="sun">☼</span>
-            <span class="moon">☾</span>
-          </label>
-        </nav>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#internship">Internship</a>
+            <a href="#how-it-works">How It Works</a>
 
-      </div>
-    </header>
+            <a
+              href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-apply"
+            >
+              Apply Now
+            </a>
 
+            <!-- Theme Toggle -->
+            <button
+              type="button"
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Switch to dark mode"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb"></span>
+              </span>
 
-    <main>
+              <span class="theme-toggle-label">
+                <span class="theme-light-label">Light</span>
+                <span class="theme-dark-label">Dark</span>
+              </span>
+            </button>
+          </nav>
 
-      <!-- =========================
-           HERO
-      ========================== -->
-      <section id="home" class="hero">
-        <div class="hero-grid"></div>
+          <!-- Mobile Controls -->
+          <div class="mobile-controls">
+            <button
+              type="button"
+              class="mobile-theme-toggle theme-toggle"
+              id="mobile-theme-toggle"
+              aria-label="Switch to dark mode"
+              aria-pressed="false"
+            >
+              <span class="theme-toggle-track">
+                <span class="theme-toggle-thumb"></span>
+              </span>
+            </button>
 
-        <div class="container hero-container">
+            <button
+              type="button"
+              class="menu-button"
+              id="menu-button"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="mobile-navigation"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
 
-          <div class="hero-content reveal-up">
+        <!-- Mobile Navigation -->
+        <div
+          class="mobile-navigation"
+          id="mobile-navigation"
+          aria-hidden="true"
+        >
+          <div class="container mobile-navigation-inner">
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#internship">Internship</a>
+            <a href="#how-it-works">How It Works</a>
 
-            <div class="eyebrow">
-              <span class="eyebrow-dot"></span>
-              Practical learning. Real-world experience.
-            </div>
+            <a
+              href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mobile-apply"
+            >
+              Apply Now
+            </a>
+          </div>
+        </div>
+      </header>
 
-            <h1>
+      <main>
+        <!-- =================================================
+                 HERO
+            ================================================== -->
+
+        <section class="hero" id="home">
+          <div class="container hero-grid">
+            <div class="hero-content">
+              <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                30-Day Practical Internship
+              </div>
+
+              <h1>
               Turn what you
               <span>learn</span>
               into what you
               <em>can do.</em>
             </h1>
 
-            <p class="hero-description">
-              TechBridge helps learners bridge the gap between learning
-              technology and applying it through practical programs and
-              real-world experience.
-            </p>
+              <p class="hero-description">
+                TechBridge by Baselink Services Limited helps learners move
+                beyond theory through practical technology learning, focused
+                programs, and a structured 30-day internship experience.
+              </p>
 
-            <div class="hero-actions">
-              <a
-                href="https://forms.gle/8EbdSy5ttGfLZfjv5"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button button-primary"
-              >
-                Apply for Internship
-                <span>↗</span>
-              </a>
-
-              <a href="#programs" class="button button-secondary">
-                Explore Programs
-                <span>↓</span>
-              </a>
-            </div>
-
-            <div class="hero-meta">
-              <div>
-                <strong>02</strong>
-                <span>Current programs</span>
-              </div>
-
-              <div class="meta-divider"></div>
-
-              <div>
-                <strong>30</strong>
-                <span>Days of practical internship</span>
-              </div>
-            </div>
-
-          </div>
-
-
-          <!-- Hero visual -->
-          <div class="hero-visual reveal-right">
-
-            <div class="visual-glow"></div>
-
-            <div class="experience-card">
-
-              <div class="experience-top">
-                <span class="status-pill">
-                  <span></span>
-                  Learning in progress
-                </span>
-
-                <span class="card-dots">•••</span>
-              </div>
-
-              <div class="visual-heading">
-                <small>THE TECHBRIDGE EXPERIENCE</small>
-                <h2>
-                  Learn.
-                  <br />
-                  Build.
-                  <br />
-                  <span>Grow.</span>
-                </h2>
-              </div>
-
-              <div class="progress-section">
-                <div class="progress-label">
-                  <span>Practical experience</span>
-                  <strong>01 / 03</strong>
+              <!-- Internship Timeline Added -->
+              <div class="hero-timeline">
+                <div class="hero-timeline-item">
+                  <span class="timeline-number">01</span>
+                  <div>
+                    <strong>Learn</strong>
+                    <small>Build practical foundations</small>
+                  </div>
                 </div>
 
-                <div class="progress-bar">
-                  <span></span>
+                <div class="timeline-line"></div>
+
+                <div class="hero-timeline-item">
+                  <span class="timeline-number">02</span>
+                  <div>
+                    <strong>Build</strong>
+                    <small>Work through practical projects</small>
+                  </div>
+                </div>
+
+                <div class="timeline-line"></div>
+
+                <div class="hero-timeline-item">
+                  <span class="timeline-number">03</span>
+                  <div>
+                    <strong>Complete</strong>
+                    <small>Finish the 30-day experience</small>
+                  </div>
+                </div>
+
+                <div class="timeline-line"></div>
+
+                <div class="hero-timeline-item">
+                  <span class="timeline-number">04</span>
+                  <div>
+                    <strong>Progress</strong>
+                    <small>Recommendation based on performance</small>
+                  </div>
                 </div>
               </div>
 
-              <div class="visual-bottom">
-                <div class="mini-avatar">TB</div>
+              <div class="hero-actions">
+                <a
+                  href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button button-primary"
+                >
+                  Apply for Internship
+                  <span aria-hidden="true">↗</span>
+                </a>
 
-                <div>
-                  <strong>Real-world focus</strong>
-                  <small>From learning to application</small>
+                <a href="#programs" class="button button-secondary">
+                  Explore Programs
+                </a>
+              </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="hero-visual">
+              <div class="hero-card">
+                <div class="hero-card-top">
+                  <span class="status-indicator"></span>
+                  <span>TECHBRIDGE</span>
+
+                  <span class="hero-card-label"> PRACTICAL LEARNING </span>
+                </div>
+
+                <div class="hero-card-main">
+                  <span class="hero-card-kicker"> CURRENT PATHWAYS </span>
+
+                  <h2>Turn knowledge into experience.</h2>
+
+                  <div class="pathway-list">
+                    <div class="pathway-item">
+                      <span class="pathway-icon">DA</span>
+
+                      <div>
+                        <strong>Data Analytics</strong>
+                        <small> Learn through practical application. </small>
+                      </div>
+
+                      <span>↗</span>
+                    </div>
+
+                    <div class="pathway-item">
+                      <span class="pathway-icon">WD</span>
+
+                      <div>
+                        <strong>Web Development</strong>
+                        <small>
+                          Build with real-world development practices.
+                        </small>
+                      </div>
+
+                      <span>↗</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-card-bottom">
+                  <span>30 DAYS</span>
+                  <span>•</span>
+                  <span>PRACTICAL</span>
+                  <span>•</span>
+                  <span>PROJECT-FOCUSED</span>
                 </div>
               </div>
 
+              <div class="hero-orbit hero-orbit-one"></div>
+              <div class="hero-orbit hero-orbit-two"></div>
             </div>
-
-            <div class="floating-card floating-card-one">
-              <span class="floating-icon">01</span>
-              <div>
-                <strong>Data Analytics</strong>
-                <small>Current program</small>
-              </div>
-            </div>
-
-            <div class="floating-card floating-card-two">
-              <span class="floating-icon">02</span>
-              <div>
-                <strong>Web Development</strong>
-                <small>Current program</small>
-              </div>
-            </div>
-
           </div>
+        </section>
 
-        </div>
-      </section>
+        <!-- =================================================
+                 ABOUT
+            ================================================== -->
 
+        <section class="section about-section" id="about">
+          <div class="container">
+            <div class="section-heading">
+              <span class="section-label"> ABOUT TECHBRIDGE </span>
 
-      <!-- =========================
-           TRUST / INTRO STRIP
-      ========================== -->
-      <section class="intro-strip">
-        <div class="container intro-grid">
+              <h2>Learning should lead somewhere.</h2>
 
-          <div class="intro-label">
-            <span class="line"></span>
-            <span>TECHBRIDGE</span>
-          </div>
-
-          <p>
-            <strong>Bridging Learning to Real-World Experience.</strong>
-            A practical learning environment for people looking to develop
-            relevant technology skills and gain experience applying them.
-          </p>
-
-        </div>
-      </section>
-
-
-      <!-- =========================
-           ABOUT
-      ========================== -->
-      <section id="about" class="section about-section">
-        <div class="container">
-
-          <div class="section-heading split-heading">
-
-            <div>
-              <span class="section-kicker">01 — ABOUT TECHBRIDGE</span>
-
-              <h2>
-                Learning should lead
-                <span>somewhere.</span>
-              </h2>
+              <p>
+                TechBridge is an initiative by Baselink Services Limited focused
+                on helping learners bridge the gap between what they learn and
+                how they apply it in practical environments.
+              </p>
             </div>
 
-            <p>
-              TechBridge by Baselink Services Limited is focused on helping
-              learners move beyond theory and develop practical experience
-              through technology-focused learning and internship opportunities.
-            </p>
+            <div class="about-grid">
+              <div class="about-intro">
+                <span class="large-number">01</span>
 
-          </div>
-
-
-          <div class="about-grid">
-
-            <article class="about-card about-card-large">
-              <div class="number">01</div>
-
-              <div class="about-card-content">
-                <span>THE GAP</span>
-
-                <h3>
-                  From knowing
-                  <br />
-                  to doing.
-                </h3>
+                <h3>From learning to doing.</h3>
 
                 <p>
-                  Learning technology is one part of the journey. Applying
-                  that knowledge in practical situations is where experience
-                  starts to develop.
+                  Through focused technology programs and a structured practical
+                  internship, TechBridge creates an environment where learners
+                  can develop applicable skills through hands-on experience.
                 </p>
               </div>
 
-              <div class="corner-shape"></div>
-            </article>
+              <div class="about-features">
+                <article class="feature-card">
+                  <span class="feature-number">01</span>
 
+                  <h3>Practical Focus</h3>
 
-            <article class="about-card">
-              <div class="number">02</div>
+                  <p>
+                    Move beyond theory with practical, project-focused learning
+                    experiences.
+                  </p>
+                </article>
 
-              <span>PRACTICE</span>
+                <article class="feature-card">
+                  <span class="feature-number">02</span>
 
-              <h3>Build practical experience.</h3>
+                  <h3>Focused Pathways</h3>
 
-              <p>
-                TechBridge programs are designed around practical learning
-                and application rather than learning in isolation.
-              </p>
-            </article>
+                  <p>
+                    Choose from Data Analytics and Web Development learning
+                    pathways.
+                  </p>
+                </article>
 
+                <article class="feature-card">
+                  <span class="feature-number">03</span>
 
-            <article class="about-card">
-              <div class="number">03</div>
+                  <h3>Real Experience</h3>
 
-              <span>EXPERIENCE</span>
-
-              <h3>Bridge learning to reality.</h3>
-
-              <p>
-                The goal is to help learners take the next step from
-                acquiring knowledge to applying it in meaningful ways.
-              </p>
-            </article>
-
+                  <p>
+                    Apply your knowledge through a structured 30-day practical
+                    internship.
+                  </p>
+                </article>
+              </div>
+            </div>
           </div>
+        </section>
 
-        </div>
-      </section>
+        <!-- =================================================
+                 PROGRAMS
+            ================================================== -->
 
+        <section class="section programs-section" id="programs">
+          <div class="container">
+            <div class="section-heading section-heading-row">
+              <div>
+                <span class="section-label"> CURRENT PROGRAMS </span>
 
-      <!-- =========================
-           PROGRAMS
-      ========================== -->
-      <section id="programs" class="section programs-section">
-        <div class="container">
-
-          <div class="section-heading">
-
-            <span class="section-kicker">02 — CURRENT PROGRAMS</span>
-
-            <div class="heading-row">
-              <h2>
-                Choose a path.
-                <span>Start building.</span>
-              </h2>
+                <h2>Choose your learning path.</h2>
+              </div>
 
               <p>
-                Explore the current TechBridge learning paths and begin
-                developing practical technology skills.
+                Focused technology pathways designed to help you develop
+                practical and applicable skills.
               </p>
             </div>
 
-          </div>
-
-
-          <div class="program-grid">
-
-            <!-- Data Analytics -->
-            <article class="program-card program-analytics">
-
-              <div class="program-number">01</div>
-
-              <div class="program-visual analytics-visual">
-
-                <div class="chart-bars">
-                  <span style="--height: 35%"></span>
-                  <span style="--height: 55%"></span>
-                  <span style="--height: 45%"></span>
-                  <span style="--height: 75%"></span>
-                  <span style="--height: 65%"></span>
-                  <span style="--height: 90%"></span>
+            <div class="program-grid">
+              <article class="program-card">
+                <div class="program-card-top">
+                  <span class="program-index">01</span>
+                  <span class="program-arrow">↗</span>
                 </div>
 
-                <div class="chart-line"></div>
-
-                <div class="data-label">
-                  <small>DATA</small>
-                  <strong>ANALYTICS</strong>
-                </div>
-
-              </div>
-
-              <div class="program-content">
-                <div class="program-tag">CURRENT PROGRAM</div>
+                <div class="program-icon">DA</div>
 
                 <h3>Data Analytics</h3>
 
                 <p>
-                  Develop practical skills around working with data,
-                  understanding information, and turning data into useful
-                  insights.
+                  Develop practical data analytics knowledge and learn how to
+                  turn data into useful insights.
                 </p>
 
                 <div class="program-footer">
-                  <span>Program 01</span>
-                  <a href="#internship" aria-label="Learn more about Data Analytics">
-                    Explore →
-                  </a>
+                  <span>DATA</span>
+                  <span>ANALYTICS</span>
                 </div>
-              </div>
+              </article>
 
-            </article>
-
-
-            <!-- Web Development -->
-            <article class="program-card program-web">
-
-              <div class="program-number">02</div>
-
-              <div class="program-visual web-visual">
-
-                <div class="code-window">
-
-                  <div class="window-bar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-
-                  <div class="code-content">
-                    <span class="code-purple">&lt;</span>
-                    <span>build</span>
-                    <span class="code-purple">&gt;</span>
-
-                    <br />
-
-                    <span class="indent">
-                      practical
-                    </span>
-
-                    <br />
-
-                    <span class="code-purple">&lt;/</span>
-                    <span>skills</span>
-                    <span class="code-purple">&gt;</span>
-                  </div>
-
+              <article class="program-card program-card-dark">
+                <div class="program-card-top">
+                  <span class="program-index">02</span>
+                  <span class="program-arrow">↗</span>
                 </div>
 
-              </div>
-
-              <div class="program-content">
-                <div class="program-tag">CURRENT PROGRAM</div>
+                <div class="program-icon">WD</div>
 
                 <h3>Web Development</h3>
 
                 <p>
-                  Build a foundation in creating websites and web experiences
-                  while developing the practical skills needed to turn ideas
-                  into working interfaces.
+                  Build practical web development skills through hands-on
+                  development and project-focused learning.
                 </p>
 
                 <div class="program-footer">
-                  <span>Program 02</span>
-                  <a href="#internship" aria-label="Learn more about Web Development">
-                    Explore →
-                  </a>
+                  <span>WEB</span>
+                  <span>DEVELOPMENT</span>
                 </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- =================================================
+                 INTERNSHIP
+            ================================================== -->
+
+        <section class="section internship-section" id="internship">
+          <div class="container">
+            <div class="internship-grid">
+              <div class="internship-content">
+                <span class="section-label"> THE INTERNSHIP </span>
+
+                <h2>30 days of practical experience.</h2>
+
+                <p>
+                  The TechBridge internship is designed around practical
+                  participation, giving learners the opportunity to apply what
+                  they have learned through a focused 30-day experience.
+                </p>
+
+                <div class="internship-benefit">
+                  <span class="benefit-icon">✓</span>
+
+                  <div>
+                    <strong> Recommendation Letter </strong>
+
+                    <p>
+                      A recommendation letter may be provided based on
+                      successful participation and performance.
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-link"
+                >
+                  Apply for the internship
+                  <span>↗</span>
+                </a>
               </div>
 
-            </article>
+              <div class="internship-timeline">
+                <div class="timeline-heading">
+                  <span>INTERNSHIP JOURNEY</span>
+                  <small>30 DAYS</small>
+                </div>
 
+                <div class="timeline">
+                  <div class="timeline-step active">
+                    <span class="timeline-dot"></span>
+
+                    <div>
+                      <span>PHASE 01</span>
+                      <h3>Start</h3>
+                      <p>Begin your practical internship journey.</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-step">
+                    <span class="timeline-dot"></span>
+
+                    <div>
+                      <span>PHASE 02</span>
+                      <h3>Learn & Build</h3>
+                      <p>
+                        Apply knowledge through practical activities and
+                        projects.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-step">
+                    <span class="timeline-dot"></span>
+
+                    <div>
+                      <span>PHASE 03</span>
+                      <h3>Complete</h3>
+                      <p>Finish the 30-day practical experience.</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-step">
+                    <span class="timeline-dot"></span>
+
+                    <div>
+                      <span>PHASE 04</span>
+                      <h3>Progress</h3>
+                      <p>
+                        Successful performance can support a recommendation
+                        letter.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
 
-        </div>
-      </section>
+        <!-- =================================================
+                 HOW IT WORKS
+            ================================================== -->
 
+        <section class="section process-section" id="how-it-works">
+          <div class="container">
+            <div class="section-heading centered">
+              <span class="section-label"> HOW IT WORKS </span>
 
-      <!-- =========================
-           INTERNSHIP
-      ========================== -->
-      <section id="internship" class="section internship-section">
+              <h2>A simple path from learning to experience.</h2>
+            </div>
 
+            <div class="process-grid">
+              <article class="process-item">
+                <span class="process-number">01</span>
+
+                <h3>Choose</h3>
+
+                <p>
+                  Select the technology pathway that aligns with your learning
+                  goals.
+                </p>
+              </article>
+
+              <article class="process-item">
+                <span class="process-number">02</span>
+
+                <h3>Apply</h3>
+
+                <p>Complete the official TechBridge application form.</p>
+              </article>
+
+              <article class="process-item">
+                <span class="process-number">03</span>
+
+                <h3>Participate</h3>
+
+                <p>
+                  Take part in the practical learning and internship experience.
+                </p>
+              </article>
+
+              <article class="process-item">
+                <span class="process-number">04</span>
+
+                <h3>Progress</h3>
+
+                <p>
+                  Complete the experience and build evidence of practical
+                  participation.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- =================================================
+                 READY TO BEGIN
+            ================================================== -->
+
+        <section class="ready-section" id="apply">
+          <div class="container">
+            <div class="ready-card">
+              <div class="ready-content">
+                <span class="section-label"> READY TO BEGIN? </span>
+
+                <h2>Turn your learning into experience.</h2>
+
+                <p>
+                  Explore the available programs, apply for the 30-day
+                  internship, and join the TechBridge learning community.
+                </p>
+              </div>
+
+              <div class="ready-actions">
+                <a
+                  href="https://forms.gle/8EbdSy5ttGfLZfjv5?utm_source=chatgpt.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button button-light"
+                >
+                  Apply for Internship
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <a
+                  href="https://chat.whatsapp.com/FqpBvYS4oaK32cXDxc8JIS?utm_source=chatgpt.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button button-outline-light"
+                >
+                  Join WhatsApp Community
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
         <div class="container">
+          <div class="footer-main">
+            <div class="footer-brand">
+              <a href="#home" class="brand" aria-label="TechBridge home">
+                <span class="brand-mark" aria-hidden="true">
+                  <span>T</span>
+                  <span>B</span>
+                </span>
 
-          <div class="internship-layout">
-
-            <div class="internship-intro">
-
-              <span class="section-kicker">03 — PRACTICAL INTERNSHIP</span>
-
-              <h2>
-                30 days to move
-                <span>from learning to experience.</span>
-              </h2>
-
-              <p>
-                The TechBridge 30-Day Practical Internship gives participants
-                an opportunity to apply their learning through a practical,
-                project-based experience.
-              </p>
-
-              <a
-                href="https://forms.gle/8EbdSy5ttGfLZfjv5"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button button-primary"
-              >
-                Start Your Application
-                <span>↗</span>
+                <span class="brand-copy">
+                  <strong>TechBridge</strong>
+                  <small> by Baselink Services Limited </small>
+                </span>
               </a>
 
+              <p>Bridging Learning to Real-World Experience.</p>
             </div>
 
+            <div class="footer-column">
+              <span>EXPLORE</span>
 
-            <div class="internship-benefits">
-
-              <div class="benefit-card">
-                <span class="benefit-number">01</span>
-
-                <div>
-                  <h3>Practical Projects</h3>
-                  <p>
-                    Apply what you have learned through a practical,
-                    project-based internship experience.
-                  </p>
-                </div>
-              </div>
-
-
-              <div class="benefit-card">
-                <span class="benefit-number">02</span>
-
-                <div>
-                  <h3>Real-World Focus</h3>
-                  <p>
-                    Work toward bridging the gap between learning and
-                    real-world application.
-                  </p>
-                </div>
-              </div>
-
-
-              <div class="benefit-card">
-                <span class="benefit-number">03</span>
-
-                <div>
-                  <h3>Recommendation Letter</h3>
-                  <p>
-                    Successful participation and performance may qualify
-                    participants for a recommendation letter.
-                  </p>
-                </div>
-              </div>
-
+              <a href="#about">About</a>
+              <a href="#programs">Programs</a>
+              <a href="#internship">Internship</a>
+              <a href="#how-it-works">How It Works</a>
             </div>
 
-          </div>
+            <div class="footer-column">
+              <span>CONNECT</span>
 
-        </div>
-
-      </section>
-
-
-      <!-- =========================
-           HOW IT WORKS
-      ========================== -->
-      <section id="how-it-works" class="section process-section">
-        <div class="container">
-
-          <div class="section-heading center-heading">
-
-            <span class="section-kicker">04 — HOW TO JOIN</span>
-
-            <h2>
-              Your next step is
-              <span>simple.</span>
-            </h2>
-
-            <p>
-              Move from discovering TechBridge to joining the practical
-              learning experience.
-            </p>
-
-          </div>
-
-
-          <div class="process-grid">
-
-            <article class="process-card">
-              <div class="process-top">
-                <span>01</span>
-                <div class="process-icon">◎</div>
-              </div>
-
-              <h3>Explore</h3>
-
-              <p>
-                Learn about the available programs and identify the path
-                that matches your interests.
-              </p>
-            </article>
-
-
-            <article class="process-card">
-              <div class="process-top">
-                <span>02</span>
-                <div class="process-icon">↗</div>
-              </div>
-
-              <h3>Apply</h3>
-
-              <p>
-                Complete the official TechBridge internship application
-                form to express your interest.
-              </p>
-            </article>
-
-
-            <article class="process-card">
-              <div class="process-top">
-                <span>03</span>
-                <div class="process-icon">◇</div>
-              </div>
-
-              <h3>Participate</h3>
-
-              <p>
-                Take part in the 30-Day Practical Internship and apply your
-                learning through practical work.
-              </p>
-            </article>
-
-
-            <article class="process-card">
-              <div class="process-top">
-                <span>04</span>
-                <div class="process-icon">✓</div>
-              </div>
-
-              <h3>Grow</h3>
-
-              <p>
-                Build practical experience and work toward successful
-                participation and performance.
-              </p>
-            </article>
-
-          </div>
-
-        </div>
-      </section>
-
-
-      <!-- =========================
-           COMMUNITY
-      ========================== -->
-      <section id="community" class="section community-section">
-        <div class="container">
-
-          <div class="community-card">
-
-            <div class="community-pattern"></div>
-
-            <div class="community-content">
-
-              <span class="section-kicker">05 — TECHBRIDGE COMMUNITY</span>
-
-              <h2>
-                Stay connected to
-                <span>the journey.</span>
-              </h2>
-
-              <p>
-                Join the TechBridge WhatsApp community to stay connected
-                with the TechBridge community.
-              </p>
+              <a href="mailto:techbridgebaslink@gmail.com"> Email </a>
 
               <a
-                href="https://chat.whatsapp.com/FqpBvYS4oaK32cXDxc8JIS"
+                href="https://www.linkedin.com/company/techbridge-services/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="button button-light"
               >
-                Join WhatsApp Community
-                <span>↗</span>
+                LinkedIn
               </a>
 
+              <a
+                href="https://www.facebook.com/p/Baselink-Services-100066771475783/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+
+              <a
+                href="https://chat.whatsapp.com/FqpBvYS4oaK32cXDxc8JIS?utm_source=chatgpt.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp Community
+              </a>
             </div>
-
-
-            <div class="community-orbit">
-
-              <div class="orbit orbit-one"></div>
-              <div class="orbit orbit-two"></div>
-              <div class="orbit orbit-three"></div>
-
-              <div class="community-logo">
-                TB
-              </div>
-
-            </div>
-
           </div>
 
-        </div>
-      </section>
+          <div class="footer-bottom">
+            <span> © 2026 TechBridge by Baselink Services Limited. </span>
 
-
-      <!-- =========================
-           FINAL CTA
-      ========================== -->
-      <section class="final-cta">
-
-        <div class="container final-cta-container">
-
-          <span class="section-kicker">READY TO BEGIN?</span>
-
-          <h2>
-            Build the bridge between
-            <span>learning and experience.</span>
-          </h2>
-
-          <p>
-            Explore TechBridge programs and take the next step toward
-            practical experience.
-          </p>
-
-          <div class="final-actions">
-
-            <a
-              href="https://forms.gle/8EbdSy5ttGfLZfjv5"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="button button-primary"
-            >
-              Apply for the Internship
-              <span>↗</span>
-            </a>
-
-            <a
-              href="https://chat.whatsapp.com/FqpBvYS4oaK32cXDxc8JIS"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="button button-outline-light"
-            >
-              Join the Community
-            </a>
-
+            <span> Bridging Learning to Real-World Experience. </span>
           </div>
-
         </div>
+      </footer>
+    </div>
 
-      </section>
+    <!-- JAVASCRIPT -->
+    <script>
+      /* =====================================================
+           MOBILE MENU
+        ====================================================== */
 
-    </main>
+      const menuButton = document.getElementById("menu-button");
+      const mobileNavigation = document.getElementById("mobile-navigation");
 
+      const mobileNavLinks = mobileNavigation.querySelectorAll("a");
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-    <footer class="site-footer">
+      function openMobileMenu() {
+        mobileNavigation.classList.add("is-open");
 
-      <div class="container footer-main">
+        menuButton.classList.add("is-open");
 
-        <div class="footer-brand">
+        menuButton.setAttribute("aria-expanded", "true");
 
-          <a href="#home" class="brand">
-            <span class="brand-mark">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
+        menuButton.setAttribute("aria-label", "Close navigation menu");
 
-            <span class="brand-text">
-              <strong>TechBridge</strong>
-              <small>by Baselink Services Limited</small>
-            </span>
-          </a>
+        mobileNavigation.setAttribute("aria-hidden", "false");
 
-          <p>
-            Bridging Learning to Real-World Experience.
-          </p>
+        document.body.classList.add("menu-open");
+      }
 
-        </div>
+      function closeMobileMenu() {
+        mobileNavigation.classList.remove("is-open");
 
+        menuButton.classList.remove("is-open");
 
-        <div class="footer-column">
-          <h3>Explore</h3>
+        menuButton.setAttribute("aria-expanded", "false");
 
-          <a href="#about">About</a>
-          <a href="#programs">Programs</a>
-          <a href="#internship">Internship</a>
-          <a href="#how-it-works">How It Works</a>
-        </div>
+        menuButton.setAttribute("aria-label", "Open navigation menu");
 
+        mobileNavigation.setAttribute("aria-hidden", "true");
 
-        <div class="footer-column">
-          <h3>Connect</h3>
+        document.body.classList.remove("menu-open");
+      }
 
-          <a
-            href="https://www.linkedin.com/company/techbridge-services/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
+      function toggleMobileMenu(event) {
+        event.stopPropagation();
 
-          <a
-            href="https://www.facebook.com/p/Baselink-Services-100066771475783/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Facebook
-          </a>
+        if (mobileNavigation.classList.contains("is-open")) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      }
 
-          <a
-            href="https://chat.whatsapp.com/FqpBvYS4oaK32cXDxc8JIS"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            WhatsApp Community
-          </a>
-        </div>
+      menuButton.addEventListener("click", toggleMobileMenu);
 
+      /*
+       * Close the menu when a navigation link is selected.
+       * preventDefault is intentionally NOT used, so the browser
+       * can still perform normal anchor navigation.
+       */
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          closeMobileMenu();
+        });
+      });
 
-        <div class="footer-column footer-contact">
-          <h3>Contact</h3>
+      /*
+       * Close when clicking anywhere outside the menu.
+       */
+      document.addEventListener("click", (event) => {
+        if (!mobileNavigation.classList.contains("is-open")) {
+          return;
+        }
 
-          <a href="mailto:techbridgebaslink@gmail.com" target="_blank">
-            techbridgebaslink@gmail.com
-          </a>
+        const clickedInsideMenu = mobileNavigation.contains(event.target);
 
-          <a
-            href="https://forms.gle/8EbdSy5ttGfLZfjv5"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Internship Application ↗
-          </a>
-        </div>
+        const clickedMenuButton = menuButton.contains(event.target);
 
-      </div>
+        if (!clickedInsideMenu && !clickedMenuButton) {
+          closeMobileMenu();
+        }
+      });
 
+      /*
+       * Escape key closes the mobile navigation.
+       */
+      document.addEventListener("keydown", (event) => {
+        if (
+          event.key === "Escape" &&
+          mobileNavigation.classList.contains("is-open")
+        ) {
+          closeMobileMenu();
+          menuButton.focus();
+        }
+      });
 
-      <div class="container footer-bottom">
+      /*
+       * If viewport becomes desktop-sized while the mobile
+       * navigation is open, reset its state.
+       */
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 700) {
+          closeMobileMenu();
+        }
+      });
 
-        <span>
-          © 2026 TechBridge by Baselink Services Limited.
-        </span>
+      /* =====================================================
+           LIGHT / DARK MODE
+        ====================================================== */
 
-        <span>
-          Bridging Learning to Real-World Experience.
-        </span>
+      const themeButtons = [
+        document.getElementById("theme-toggle"),
+        document.getElementById("mobile-theme-toggle"),
+      ];
 
-      </div>
+      function setTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
 
-    </footer>
+        const isDark = theme === "dark";
 
-  </div>
+        themeButtons.forEach((button) => {
+          if (!button) return;
 
-</body>
+          button.setAttribute("aria-pressed", String(isDark));
+
+          button.setAttribute(
+            "aria-label",
+            isDark ? "Switch to light mode" : "Switch to dark mode",
+          );
+        });
+
+        localStorage.setItem("techbridge-theme", theme);
+      }
+
+      function getInitialTheme() {
+        const savedTheme = localStorage.getItem("techbridge-theme");
+
+        if (savedTheme === "light" || savedTheme === "dark") {
+          return savedTheme;
+        }
+
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+
+      const initialTheme = getInitialTheme();
+
+      setTheme(initialTheme);
+
+      themeButtons.forEach((button) => {
+        if (!button) return;
+
+        button.addEventListener("click", (event) => {
+          event.stopPropagation();
+
+          const currentTheme =
+            document.documentElement.getAttribute("data-theme");
+
+          setTheme(currentTheme === "dark" ? "light" : "dark");
+        });
+      });
+
+      /* =====================================================
+           PREVENT HASH NAVIGATION FROM CREATING UNWANTED
+           MOBILE MENU STATE
+        ====================================================== */
+
+      window.addEventListener("hashchange", () => {
+        if (mobileNavigation.classList.contains("is-open")) {
+          closeMobileMenu();
+        }
+      });
+    </script>
+  </body>
 </html>
