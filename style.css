@@ -1540,7 +1540,7 @@ html[data-theme="dark"] .theme-dark-label {
 
 .program-card-dark {
     background: var(--surface-dark);
-    color: #ffffff;
+    color: var(--text-muted);
 
     border-color: transparent;
 }
